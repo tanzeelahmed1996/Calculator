@@ -89,6 +89,11 @@ static Stage current;
                     sum = firstVar / secondVar;
                 }
 
+                if (tokenized.size()==1){
+                    double firstVar = Double.parseDouble(tokenized.get(i));
+                    sum = firstVar;
+                }
+
 
             }
 
