@@ -8,7 +8,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Calculator" prefHeight="375" prefWidth="300" stylesheets="theme.css">
     <top>
-     <TextField fx:id="numberInput" prefHeight="50"/>
+     <TextField fx:id="numberInput" prefHeight="50" editable="false"/>
     </top>
 
     <center>

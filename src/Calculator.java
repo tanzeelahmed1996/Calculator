@@ -1,5 +1,4 @@
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -26,7 +25,7 @@ static Stage current;
         stage.show();
     }
 
-    public void sumMethod(ActionEvent event) {
+    public void sumMethod() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("+ ");
 
@@ -36,7 +35,7 @@ static Stage current;
         }
     }
 
-    public void equalsMethod(ActionEvent event) {
+    public void equalsMethod() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("=");
 
@@ -90,8 +89,7 @@ static Stage current;
                 }
 
                 if (tokenized.size()==1){
-                    double firstVar = Double.parseDouble(tokenized.get(i));
-                    sum = firstVar;
+                    sum = Double.parseDouble(tokenized.get(i));
                 }
 
 
@@ -101,7 +99,7 @@ static Stage current;
         }
     }
 
-    public void subtractMethod(ActionEvent event) {
+    public void subtractMethod() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("- ");
 
@@ -111,7 +109,7 @@ static Stage current;
         }
     }
 
-    public void multiplyMethod(ActionEvent event) {
+    public void multiplyMethod() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("× ");
 
@@ -121,7 +119,7 @@ static Stage current;
         }
     }
 
-    public void divideMethod(ActionEvent event) {
+    public void divideMethod() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("÷ ");
 
@@ -132,7 +130,7 @@ static Stage current;
     }
 
 
-    public void decimalPoint(ActionEvent event) {
+    public void decimalPoint() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText(".");
 
@@ -142,7 +140,7 @@ static Stage current;
         }
     }
 
-    public void zero(ActionEvent event) {
+    public void zero() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("0");
 
@@ -152,7 +150,7 @@ static Stage current;
         }
     }
 
-    public void one(ActionEvent event) {
+    public void one() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("1");
 
@@ -162,7 +160,7 @@ static Stage current;
         }
     }
 
-    public void two(ActionEvent event) {
+    public void two() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("2");
 
@@ -172,7 +170,7 @@ static Stage current;
         }
     }
 
-    public void three(ActionEvent event) {
+    public void three() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("3");
 
@@ -182,7 +180,7 @@ static Stage current;
         }
     }
 
-    public void four(ActionEvent event) {
+    public void four() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("4");
 
@@ -192,7 +190,7 @@ static Stage current;
         }
     }
 
-    public void five(ActionEvent event) {
+    public void five() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("5");
 
@@ -202,7 +200,7 @@ static Stage current;
         }
     }
 
-    public void six(ActionEvent event) {
+    public void six() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("6");
 
@@ -212,7 +210,7 @@ static Stage current;
         }
     }
 
-    public void seven(ActionEvent event) {
+    public void seven() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("7");
 
@@ -222,7 +220,7 @@ static Stage current;
         }
     }
 
-    public void eight(ActionEvent event) {
+    public void eight() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("8");
 
@@ -232,7 +230,7 @@ static Stage current;
         }
     }
 
-    public void nine(ActionEvent event) {
+    public void nine() {
         if (numberInput.getText().isEmpty()) {
             numberInput.setText("9");
 
@@ -243,7 +241,7 @@ static Stage current;
     }
 
 
-    public void clear(ActionEvent event) {
+    public void clear() {
         numberInput.clear();
     }
 }
