@@ -1,0 +1,20 @@
+*{
+ -primary-color: #2b2a2f;
+ -secondary-color: #403f44;
+ -green-color: #0ab556;
+ -red-color:#b70d1b
+}
+{
+ -fx-background-color: -primary-color;
+ -fx-text-fill: white;
+ -fx-border-color: -secondary-color;
+}
+
+#equalsButton{
+-fx-background-color: -green-color;
+}
+
+#clearButton{
+-fx-background-color: -red-color;
+
+}

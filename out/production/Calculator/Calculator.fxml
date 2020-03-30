@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Calculator" prefHeight="375" prefWidth="300" stylesheets="theme.css">
+    <top>
+     <TextField fx:id="numberInput" prefHeight="50"/>
+    </top>
+
+    <center>
+        <VBox>
+            <HBox>
+                <Button text="7" prefWidth="75" prefHeight="75" onAction="#seven"/>
+                <Button text="8" prefWidth="75" prefHeight="75" onAction="#eight"/>
+                <Button text="9" prefWidth="75" prefHeight="75" onAction="#nine"/>
+                <Button text="÷" prefWidth="75" prefHeight="75" onAction="#divideMethod"/>
+            </HBox>
+            <HBox>
+                <Button text="4" prefWidth="75" prefHeight="75" onAction="#four"/>
+                <Button text="5" prefWidth="75" prefHeight="75" onAction="#five"/>
+                <Button text="6" prefWidth="75" prefHeight="75" onAction="#six"/>
+                <Button text="×" prefWidth="75" prefHeight="75" onAction="#multiplyMethod"/>
+            </HBox>
+            <HBox>
+                <Button text="1" prefWidth="75" prefHeight="75" onAction="#one"/>
+                <Button text="2" prefWidth="75" prefHeight="75" onAction="#two"/>
+                <Button text="3" prefWidth="75" prefHeight="75" onAction="#three"/>
+                <Button text="-" prefWidth="75" prefHeight="75" onAction="#subtractMethod"/>
+            </HBox>
+            <HBox>
+                <Button text="0" prefWidth="75" prefHeight="75" onAction="#zero"/>
+                <Button text="." prefWidth="75" prefHeight="75" onAction="#decimalPoint"/>
+                <Button fx:id="equalsButton" text="=" prefWidth="75" prefHeight="75" onAction="#equalsMethod"/>
+                <Button text="+" prefWidth="75" prefHeight="75" onAction="#sumMethod"/>
+            </HBox>
+            <HBox  >
+                <Button fx:id="clearButton" text="CLEAR" prefWidth="300" prefHeight="75" onAction="#clear" HBox.hgrow="ALWAYS"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>
